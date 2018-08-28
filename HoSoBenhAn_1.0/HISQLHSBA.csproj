@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ApplicationIcon>his_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{138FFAF3-EFC9-479F-8740-A7B749DD6559}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HISQLHSBA</RootNamespace>
+    <AssemblyName>QuanLyHoSoBenhAn</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HISQLHSBA.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bytescout.BarCode">
+      <HintPath>..\HISQLHSBA_\bin\Debug\Bytescout.BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="CheckList">
+      <HintPath>..\HISQLHSBA_\bin\Debug\CheckList.dll</HintPath>
+    </Reference>
+    <Reference Include="ConvertFont">
+      <HintPath>..\HISQLHSBA_\bin\Debug\ConvertFont.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HISQLHSBA_\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HISQLHSBA_\bin\Debug\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HISQLHSBA_\bin\Debug\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HISQLHSBA_\bin\Debug\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibDal\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Base">
+      <HintPath>..\..\DLL\3.5\E00_Base.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Common">
+      <HintPath>..\..\DLL\E00_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Control">
+      <HintPath>..\..\DLL\E00_Control.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_ControlNew">
+      <HintPath>..\..\DLL\3.5\E00_ControlNew.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\3.5\E00_System.dll</HintPath>
+    </Reference>
+    <Reference Include="HISToltal">
+      <HintPath>..\HISToltal\bin\Debug\HISToltal.dll</HintPath>
+    </Reference>
+    <Reference Include="LibDal, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Projects\HIS_2018\DLL 3.5\LibDal.dll</HintPath>
+    </Reference>
+    <Reference Include="LibList, Version=1.0.5982.39053, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Projects\HIS_2018\DLL 3.5\LibList.dll</HintPath>
+    </Reference>
+    <Reference Include="LibUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Projects\HIS_2018\DLL 3.5\LibUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="MaskedBox">
+      <HintPath>..\HISQLHSBA_\bin\Debug\MaskedBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MaskedTextBox">
+      <HintPath>..\HISQLHSBA_\bin\Debug\MaskedTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiColumnListBox">
+      <HintPath>..\HISQLHSBA_\bin\Debug\MultiColumnListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiColumnListBoxColor">
+      <HintPath>..\HISQLHSBA_\bin\Debug\MultiColumnListBoxColor.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>..\Projects\HIS_2018\DLL\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PinkieControls">
+      <HintPath>..\HISQLHSBA_\bin\Debug\PinkieControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TA_MessageBox">
+      <HintPath>..\..\DLL\TA_MessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="vnConvert">
+      <HintPath>..\Projects\HIS_2018\DLL\vnConvert.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomColumnStyles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomColumnStyles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomColumnStyles.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="frmhsluutru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanHS.Designer.cs">
+      <DependentUpon>frmNhanHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportXuatBNRaVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportXuatBNRaVien.Designer.cs">
+      <DependentUpon>frmReportXuatBNRaVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuangay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuangayXK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DanhMucViTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DanhMucViTri.Designer.cs">
+      <DependentUpon>frm_DanhMucViTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomColumnStyles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CustomColumnStyles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhsluutru.resx">
+      <DependentUpon>frmhsluutru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanHS.resx">
+      <DependentUpon>frmNhanHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportXuatBNRaVien.resx">
+      <DependentUpon>frmReportXuatBNRaVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DanhMucViTri.resx">
+      <DependentUpon>frm_DanhMucViTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="his_icon.ico" />
+    <Content Include="qlhs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E00_Model_1.0\E00_Model.csproj">
+      <Project>{6d956661-cdbf-4cd1-9084-895974864726}</Project>
+      <Name>E00_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

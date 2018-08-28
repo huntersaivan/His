@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEF17D72-5B72-4888-B06B-457DF4D4A23C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E00_API</RootNamespace>
+    <AssemblyName>E00_API</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Bus">
+      <HintPath>..\DLL\E00_Bus.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Common">
+      <HintPath>..\DLL\E00_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Helpers">
+      <HintPath>..\DLL\E00_Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_STT">
+      <HintPath>..\DLL\E00_STT.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_System">
+      <HintPath>..\DLL\E00_System.dll</HintPath>
+    </Reference>
+    <Reference Include="HISFactory">
+      <HintPath>..\DLL\HISFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="HISNgonNgu">
+      <HintPath>..\DLL\HISNgonNgu.dll</HintPath>
+    </Reference>
+    <Reference Include="LibDal">
+      <HintPath>..\DLL\LibDal.dll</HintPath>
+    </Reference>
+    <Reference Include="LibMedi">
+      <HintPath>..\DLL\LibMedi.dll</HintPath>
+    </Reference>
+    <Reference Include="LibVienphi">
+      <HintPath>..\DLL\LibVienphi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TA_MessageBox">
+      <HintPath>..\DLL\TA_MessageBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api_BADT.cs" />
+    <Compile Include="api_Base.cs" />
+    <Compile Include="api_BenhNhan.cs" />
+    <Compile Include="api_Duoc.cs" />
+    <Compile Include="api_HaoPhi.cs" />
+    <Compile Include="api_KhamBenh.cs" />
+    <Compile Include="api_NoiTru.cs" />
+    <Compile Include="api_PhatThuoc.cs" />
+    <Compile Include="api_PhongMo.cs" />
+    <Compile Include="api_QuanLyPhongGiuong.cs" />
+    <Compile Include="api_TaiSan.cs" />
+    <Compile Include="api_VienPhi.cs" />
+    <Compile Include="Base\clsBUS.cs" />
+    <Compile Include="Base\cls_System.cs" />
+    <Compile Include="Base\EventHandler.cs" />
+    <Compile Include="Base\Interface\ICacheDataService.cs" />
+    <Compile Include="Base\Interface\IInfo.cs" />
+    <Compile Include="Base\SafeCacheDataService.cs" />
+    <Compile Include="Contract\NhapVienInfo.cs" />
+    <Compile Include="Contract\ValueInfo.cs" />
+    <Compile Include="Helpers\ServerHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E00_Model_1.0\E00_Model.csproj">
+      <Project>{6d956661-cdbf-4cd1-9084-895974864726}</Project>
+      <Name>E00_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

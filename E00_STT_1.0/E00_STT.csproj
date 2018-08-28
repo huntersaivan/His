@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09D61FF2-FEA3-48C7-AD46-0D6DE9ADD7DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E00_STT</RootNamespace>
+    <AssemblyName>E00_STT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.Data.AdoDotNetInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework">
+      <HintPath>..\DLL\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore">
+      <HintPath>..\DLL\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.CommLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.CubeDefModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.DataDefModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.DataSetConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.ObjectFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.Prompting.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.ReportDefModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\CrystalDecisions.ReportAppServer.XmlSerialize.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DatabaseV2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DatabaseV2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Base, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\E00_Base.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\E00_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\E00_Control.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_ControlNew, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\E00_ControlNew.dll</HintPath>
+    </Reference>
+    <Reference Include="E00_System">
+      <HintPath>..\DLL\E00_System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TAEditor">
+      <HintPath>..\..\..\..\Quan Ly Du An\TextControlSource\TextControl\TAEditor\bin\Debug\TAEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="TA_MessageBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\TA_MessageBox.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsBUS.cs" />
+    <Compile Include="frmTesst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTesst.Designer.cs">
+      <DependentUpon>frmTesst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuat6LCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuat6LCD.Designer.cs">
+      <DependentUpon>frmXuat6LCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CapSTTTiepDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CapSTTTiepDon.Designer.cs">
+      <DependentUpon>frm_CapSTTTiepDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ChonCapSTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ChonCapSTT.Designer.cs">
+      <DependentUpon>frm_ChonCapSTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ChonLCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ChonLCD.Designer.cs">
+      <DependentUpon>frm_ChonLCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DanhMucGio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DanhMucGio.Designer.cs">
+      <DependentUpon>frm_DanhMucGio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LCD.Designer.cs">
+      <DependentUpon>frm_LCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LCD1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LCD1.Designer.cs">
+      <DependentUpon>frm_LCD1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NhomLCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NhomLCD.designer.cs">
+      <DependentUpon>frm_NhomLCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CapSTTTatCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CapSTTTatCa.Designer.cs">
+      <DependentUpon>frm_CapSTTTatCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CapSTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CapSTT.Designer.cs">
+      <DependentUpon>frm_CapSTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DinhNghiaSTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DinhNghiaSTT.designer.cs">
+      <DependentUpon>frm_DinhNghiaSTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CauHinhLCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CauHinhLCD.Designer.cs">
+      <DependentUpon>frm_CauHinhLCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PhongBan.designer.cs">
+      <DependentUpon>frm_PhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KhuVuc.designer.cs">
+      <DependentUpon>frm_KhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NhomKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NhomKhuVuc.designer.cs">
+      <DependentUpon>frm_NhomKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuetDSCho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuetDSCho.Designer.cs">
+      <DependentUpon>frm_QuetDSCho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ReportSTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ReportSTT.designer.cs">
+      <DependentUpon>frm_ReportSTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="usc_CapSTT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_CapSTT.Designer.cs">
+      <DependentUpon>usc_CapSTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_Dong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_Dong.Designer.cs">
+      <DependentUpon>usc_Dong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_MaTran.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_MaTran.Designer.cs">
+      <DependentUpon>usc_MaTran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usc_TieuDeDong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usc_TieuDeDong.Designer.cs">
+      <DependentUpon>usc_TieuDeDong.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmTesst.resx">
+      <DependentUpon>frmTesst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuat6LCD.resx">
+      <DependentUpon>frmXuat6LCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CapSTTTiepDon.resx">
+      <DependentUpon>frm_CapSTTTiepDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ChonCapSTT.resx">
+      <DependentUpon>frm_ChonCapSTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ChonLCD.resx">
+      <DependentUpon>frm_ChonLCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DanhMucGio.resx">
+      <DependentUpon>frm_DanhMucGio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LCD.resx">
+      <DependentUpon>frm_LCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LCD1.resx">
+      <DependentUpon>frm_LCD1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NhomLCD.resx">
+      <DependentUpon>frm_NhomLCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CapSTTTatCa.resx">
+      <DependentUpon>frm_CapSTTTatCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CapSTT.resx">
+      <DependentUpon>frm_CapSTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DinhNghiaSTT.resx">
+      <DependentUpon>frm_DinhNghiaSTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CauHinhLCD.resx">
+      <DependentUpon>frm_CauHinhLCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhongBan.resx">
+      <DependentUpon>frm_PhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KhuVuc.resx">
+      <DependentUpon>frm_KhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NhomKhuVuc.resx">
+      <DependentUpon>frm_NhomKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuetDSCho.resx">
+      <DependentUpon>frm_QuetDSCho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ReportSTT.resx">
+      <DependentUpon>frm_ReportSTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_CapSTT.resx">
+      <DependentUpon>usc_CapSTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_Dong.resx">
+      <DependentUpon>usc_Dong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_MaTran.resx">
+      <DependentUpon>usc_MaTran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usc_TieuDeDong.resx">
+      <DependentUpon>usc_TieuDeDong.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E00_Model_1.0\E00_Model.csproj">
+      <Project>{6d956661-cdbf-4cd1-9084-895974864726}</Project>
+      <Name>E00_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

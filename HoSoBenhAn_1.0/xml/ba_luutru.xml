@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table" msprop:REFCursorName="REFCursor">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msprop:OraDbType="107" type="xs:decimal" minOccurs="0" />
+                <xs:element name="mabn" type="xs:string" minOccurs="0" />
+                <xs:element name="soluutru" type="xs:string" minOccurs="0" />
+                <xs:element name="hoten" type="xs:string" minOccurs="0" />
+                <xs:element name="namsinh" type="xs:string" minOccurs="0" />
+                <xs:element name="phai" type="xs:string" minOccurs="0" />
+                <xs:element name="ngayvao" type="xs:string" minOccurs="0" />
+                <xs:element name="ngayra" type="xs:string" minOccurs="0" />
+                <xs:element name="chandoanvao" type="xs:string" minOccurs="0" />
+                <xs:element name="chandoanra" type="xs:string" minOccurs="0" />
+                <xs:element name="chandoannn" type="xs:string" minOccurs="0" />
+                <xs:element name="ketqua" type="xs:string" minOccurs="0" />
+                <xs:element name="tenkp" type="xs:string" minOccurs="0" />
+                <xs:element name="ttlucrv" type="xs:string" minOccurs="0" />
+                <xs:element name="soto" type="xs:string" minOccurs="0" />
+                <xs:element name="soxq" type="xs:string" minOccurs="0" />
+                <xs:element name="soct" type="xs:string" minOccurs="0" />
+                <xs:element name="sosa" type="xs:string" minOccurs="0" />
+                <xs:element name="soxn" type="xs:string" minOccurs="0" />
+                <xs:element name="sokhac" type="xs:string" minOccurs="0" />
+                <xs:element name="sodt" type="xs:string" minOccurs="0" />
+                <xs:element name="mri" type="xs:string" minOccurs="0" />
+                <xs:element name="ylenh" type="xs:string" minOccurs="0" />
+                <xs:element name="chamsoc" type="xs:string" minOccurs="0" />
+                <xs:element name="maphuongxa" type="xs:string" minOccurs="0" />
+                <xs:element name="tenpxa" type="xs:string" minOccurs="0" />
+                <xs:element name="maqu" type="xs:string" minOccurs="0" />
+                <xs:element name="tenquan" type="xs:string" minOccurs="0" />
+                <xs:element name="matt" type="xs:string" minOccurs="0" />
+                <xs:element name="tentt" type="xs:string" minOccurs="0" />
+                <xs:element name="sonha" type="xs:string" minOccurs="0" />
+                <xs:element name="cholam" type="xs:string" minOccurs="0" />
+                <xs:element name="diachi" type="xs:string" minOccurs="0" />
+                <xs:element name="madoituong" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <mabn>18000977</mabn>
+    <soluutru>I1803070054</soluutru>
+    <hoten>VŨ NGỌC ANH</hoten>
+    <namsinh>07/05/2017 12:00:00 AM</namsinh>
+    <phai>Nữ</phai>
+    <ngayvao>04/03/2018 20:56</ngayvao>
+    <ngayra>07/03/2018 07:30</ngayra>
+    <chandoanvao>J02 Viêm họng cấp</chandoanvao>
+    <chandoanra>J00.1 Viêm mũi họng.</chandoanra>
+    <chandoannn xml:space="preserve"> </chandoannn>
+    <ketqua>Đỡ, giảm</ketqua>
+    <tenkp>Khoa Nội Tim Mạch</tenkp>
+    <ttlucrv>Ra viện</ttlucrv>
+    <soto>0</soto>
+    <soxq>0</soxq>
+    <soct>0</soct>
+    <sosa>0</sosa>
+    <soxn>0</soxn>
+    <sokhac>0</sokhac>
+    <sodt>0</sodt>
+    <mri>0</mri>
+    <ylenh>0</ylenh>
+    <chamsoc>0</chamsoc>
+    <maphuongxa>7014719</maphuongxa>
+    <tenpxa>Tân Tạo A</tenpxa>
+    <maqu>70147</maqu>
+    <tenquan>Quận Bình Tân</tenquan>
+    <matt>701</matt>
+    <tentt>TP. Hồ Chí Minh</tentt>
+    <diachi> 1527 Tl10  Tân Tạo A Quận Bình Tân TP. Hồ Chí Minh</diachi>
+    <madoituong>1</madoituong>
+  </Table>
+</NewDataSet>
