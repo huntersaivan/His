@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D956661-CDBF-4CD1-9084-895974864726}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E00_Model</RootNamespace>
+    <AssemblyName>E00_Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>..\Main4.0_1.0\HisMain4\bin\Debug\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CR_Class\cls_reportBenhAnNoiTru.cs" />
+    <Compile Include="CR_Class\cls_reportBenhAnNgoaiTru.cs" />
+    <Compile Include="DB_Class\cls_KSK_DOTKHAM.cs" />
+    <Compile Include="DB_Class\cls_NS_DMBoPhan.cs" />
+    <Compile Include="DB_Class\cls_BacSi.cs" />
+    <Compile Include="DB_Class\cls_BADT_BenhAnDienTu.cs" />
+    <Compile Include="DB_Class\cls_BADT_BenhAnDienTuChiTiet.cs" />
+    <Compile Include="DB_Class\cls_BADT_DanhMuc.cs" />
+    <Compile Include="DB_Class\cls_BADT_DanhMucChiTiet.cs" />
+    <Compile Include="DB_Class\cls_BADT_DanhMucLoaiBenhAn.cs" />
+    <Compile Include="DB_Class\cls_BADT_DanhMucPhanTrang.cs" />
+    <Compile Include="DB_Class\cls_BADT_PhanQuyen.cs" />
+    <Compile Include="DB_Class\cls_BangGia.cs" />
+    <Compile Include="DB_Class\cls_BaoHiemYTe.cs" />
+    <Compile Include="DB_Class\cls_BD_BaoDong.cs" />
+    <Compile Include="DB_Class\cls_BD_BaoDongChiTiet.cs" />
+    <Compile Include="DB_Class\cls_BD_DanhMucMucDo.cs" />
+    <Compile Include="DB_Class\cls_BD_DanhMucTrangThai.cs" />
+    <Compile Include="DB_Class\cls_BD_KhoaPhong.cs" />
+    <Compile Include="DB_Class\cls_BenhAnCC.cs" />
+    <Compile Include="DB_Class\cls_BenhAnDienTu.cs" />
+    <Compile Include="DB_Class\cls_BenhAnDT.cs" />
+    <Compile Include="DB_Class\cls_BenhAnNgoaiTru.cs" />
+    <Compile Include="DB_Class\cls_BenhAnNgTr.cs" />
+    <Compile Include="DB_Class\cls_BenhAnNoiTru.cs" />
+    <Compile Include="DB_Class\cls_BenhAnPK.cs" />
+    <Compile Include="DB_Class\cls_BenhNhan.cs" />
+    <Compile Include="DB_Class\cls_BHYT.cs" />
+    <Compile Include="DB_Class\cls_BienBanHoiChan.cs" />
+    <Compile Include="DB_Class\cls_BlackList.cs" />
+    <Compile Include="DB_Class\cls_BoTuDienDanToc.cs" />
+    <Compile Include="DB_Class\cls_BoTuDienNgheNghiep.cs" />
+    <Compile Include="DB_Class\cls_BoTuDienPhuongXa.cs" />
+    <Compile Include="DB_Class\cls_BoTuDienQuanHuyen.cs" />
+    <Compile Include="DB_Class\cls_BoTuDienTinhThanh.cs" />
+    <Compile Include="DB_Class\cls_BTDBN.cs" />
+    <Compile Include="DB_Class\cls_BTDDT.cs" />
+    <Compile Include="DB_Class\cls_BTDKP_BHYT.cs" />
+    <Compile Include="DB_Class\cls_BTDKP_BV.cs" />
+    <Compile Include="DB_Class\cls_BTDNN_BV.cs" />
+    <Compile Include="DB_Class\cls_CanhBaoCanNang.cs" />
+    <Compile Include="DB_Class\cls_CanhBaoDoTuoi.cs" />
+    <Compile Include="DB_Class\cls_CanLamSang.cs" />
+    <Compile Include="DB_Class\cls_CauHinh.cs" />
+    <Compile Include="DB_Class\cls_CDHA_DanhMucMay.cs" />
+    <Compile Include="DB_Class\cls_CDHA_DMLOAI.cs" />
+    <Compile Include="DB_Class\cls_CDHA_ThongSoSieuAm.cs" />
+    <Compile Include="DB_Class\cls_CDKemTheo.cs" />
+    <Compile Include="DB_Class\cls_CDNguyenNhan.cs" />
+    <Compile Include="DB_Class\cls_CDSanKhoa.cs" />
+    <Compile Include="DB_Class\cls_ChanDoanKemTheo.cs" />
+    <Compile Include="DB_Class\cls_ChuyenKhoa.cs" />
+    <Compile Include="DB_Class\cls_ChuyenVien.cs" />
+    <Compile Include="DB_Class\cls_DanhMucBangDuLieu.cs" />
+    <Compile Include="DB_Class\cls_DanhMucBenhAn.cs" />
+    <Compile Include="DB_Class\cls_DanhMucBenhAnChiTiet.cs" />
+    <Compile Include="DB_Class\cls_DanhMucBietDuoc.cs" />
+    <Compile Include="DB_Class\cls_DanhMucCaLamViec.cs" />
+    <Compile Include="DB_Class\cls_DanhMucChuKy.cs" />
+    <Compile Include="DB_Class\cls_DanhMucChuKyChiTiet.cs" />
+    <Compile Include="DB_Class\cls_DanhMucColorTrangThai.cs" />
+    <Compile Include="DB_Class\cls_DanhMucConTrol.cs" />
+    <Compile Include="DB_Class\cls_DanhMucDonViTinh.cs" />
+    <Compile Include="DB_Class\cls_DanhMucGiuong.cs" />
+    <Compile Include="DB_Class\cls_DanhMucKyHieu.cs" />
+    <Compile Include="DB_Class\cls_DanhMucKyHieuMenu.cs" />
+    <Compile Include="DB_Class\cls_DanhMucLichLamViec.cs" />
+    <Compile Include="DB_Class\cls_DanhMucLichTrucDiaDiem.cs" />
+    <Compile Include="DB_Class\cls_DanhMucLoaiBenhAn.cs" />
+    <Compile Include="DB_Class\cls_DanhMucLoaiDoiTuong.cs" />
+    <Compile Include="DB_Class\cls_DanhMucLoaiGiuongChiTiet.cs" />
+    <Compile Include="DB_Class\cls_DanhMucLoaiPhong.cs" />
+    <Compile Include="DB_Class\cls_DanhMucMenu.cs" />
+    <Compile Include="DB_Class\cls_DanhMucNgayNghi.cs" />
+    <Compile Include="DB_Class\cls_DanhMucNhomBenh.cs" />
+    <Compile Include="DB_Class\cls_DanhMucNhomCaKhoaPhong.cs" />
+    <Compile Include="DB_Class\cls_DanhMucNhomCaLamViec.cs" />
+    <Compile Include="DB_Class\cls_DanhMucPhong.cs" />
+    <Compile Include="DB_Class\cls_DanhMucQuocGia.cs" />
+    <Compile Include="DB_Class\cls_DanhMucQuyen.cs" />
+    <Compile Include="DB_Class\cls_DanhMucThoiGian.cs" />
+    <Compile Include="DB_Class\cls_DanhMucThuocBHYTCT.cs" />
+    <Compile Include="DB_Class\cls_DanhMucThuocBHYTLL.cs" />
+    <Compile Include="DB_Class\cls_DanhMucTrungThauCT.cs" />
+    <Compile Include="DB_Class\cls_DanhMucTrungThauLL.cs" />
+    <Compile Include="DB_Class\cls_DanhMucViTri.cs" />
+    <Compile Include="DB_Class\cls_DanToc.cs" />
+    <Compile Include="DB_Class\cls_DatGiuong.cs" />
+    <Compile Include="DB_Class\cls_DenTu.cs" />
+    <Compile Include="DB_Class\cls_DinhKem.cs" />
+    <Compile Include="DB_Class\cls_DLogin.cs" />
+    <Compile Include="DB_Class\cls_DMBenhAn_BV.cs" />
+    <Compile Include="DB_Class\cls_DMNhomMau.cs" />
+    <Compile Include="DB_Class\cls_DoiTuong.cs" />
+    <Compile Include="DB_Class\cls_D_BuCSTT.cs" />
+    <Compile Include="DB_Class\cls_D_ChinhSachDuyet.cs" />
+    <Compile Include="DB_Class\cls_D_CoSoTuTruc.cs" />
+    <Compile Include="DB_Class\cls_D_DaDuyet.cs" />
+    <Compile Include="DB_Class\cls_D_DangDuyet.cs" />
+    <Compile Include="DB_Class\cls_D_DanhMucBHYT.cs" />
+    <Compile Include="DB_Class\cls_D_DanhMucLoaiGiuong.cs" />
+    <Compile Include="DB_Class\cls_D_DatHangCT.cs" />
+    <Compile Include="DB_Class\cls_D_DatHangLL.cs" />
+    <Compile Include="DB_Class\cls_D_DeNghiMuaHangCT.cs" />
+    <Compile Include="DB_Class\cls_D_DeNghiMuaHangLL.cs" />
+    <Compile Include="DB_Class\cls_D_DMBD.cs" />
+    <Compile Include="DB_Class\cls_D_DMBDBH.cs" />
+    <Compile Include="DB_Class\cls_D_DMKho.cs" />
+    <Compile Include="DB_Class\cls_D_DoiTuongDuyet.cs" />
+    <Compile Include="DB_Class\cls_D_DoiTuongDuyetCT.cs" />
+    <Compile Include="DB_Class\cls_D_DuocKP.cs" />
+    <Compile Include="DB_Class\cls_D_DutruCT.cs" />
+    <Compile Include="DB_Class\cls_D_DutruLL.cs" />
+    <Compile Include="DB_Class\cls_D_Duyet.cs" />
+    <Compile Include="DB_Class\cls_D_DuyetKho.cs" />
+    <Compile Include="DB_Class\cls_D_HaoPhiCT.cs" />
+    <Compile Include="DB_Class\cls_D_HaoPhiLL.cs" />
+    <Compile Include="DB_Class\cls_D_HoanTraCT.cs" />
+    <Compile Include="DB_Class\cls_D_HoanTraLL.cs" />
+    <Compile Include="DB_Class\cls_D_KhoaSo.cs" />
+    <Compile Include="DB_Class\cls_D_LoaiPhieu.cs" />
+    <Compile Include="DB_Class\cls_D_NgayDuyet.cs" />
+    <Compile Include="DB_Class\cls_D_TheoDoi.cs" />
+    <Compile Include="DB_Class\cls_D_TheoDoiDuyet.cs" />
+    <Compile Include="DB_Class\cls_D_ThonSo.cs" />
+    <Compile Include="DB_Class\cls_D_ThucBuCSTT.cs" />
+    <Compile Include="DB_Class\cls_D_ThucXuat.cs" />
+    <Compile Include="DB_Class\cls_D_TienThuoc.cs" />
+    <Compile Include="DB_Class\cls_D_TonKhoCT.cs" />
+    <Compile Include="DB_Class\cls_D_TonKhoTH.cs" />
+    <Compile Include="DB_Class\cls_D_TreoDuyet.cs" />
+    <Compile Include="DB_Class\cls_D_TTNgay.cs" />
+    <Compile Include="DB_Class\cls_D_XTuTrucCT.cs" />
+    <Compile Include="DB_Class\cls_D_XTuTrucLL.cs" />
+    <Compile Include="DB_Class\cls_D_XuatSDCT.cs" />
+    <Compile Include="DB_Class\cls_D_XuatSDLL.cs" />
+    <Compile Include="DB_Class\cls_Function.cs" />
+    <Compile Include="DB_Class\cls_GiaVienPhi.cs" />
+    <Compile Include="DB_Class\cls_GiaVienPhiCT.cs" />
+    <Compile Include="DB_Class\cls_HCNhi.cs" />
+    <Compile Include="DB_Class\cls_HCSoSinh.cs" />
+    <Compile Include="DB_Class\cls_HienDien.cs" />
+    <Compile Include="DB_Class\cls_HoiChan.cs" />
+    <Compile Include="DB_Class\cls_ICD10.cs" />
+    <Compile Include="DB_Class\cls_KetQua.cs" />
+    <Compile Include="DB_Class\cls_KhoaPhong.cs" />
+    <Compile Include="DB_Class\cls_KSK_BTDBN.cs" />
+    <Compile Include="DB_Class\cls_KSK_GoiDichVuNhanVien.cs" />
+    <Compile Include="DB_Class\cls_KSK_GoiDichVuPhongBan.cs" />
+    <Compile Include="DB_Class\cls_LichLamViec.cs" />
+    <Compile Include="DB_Class\cls_LichLamViecCT.cs" />
+    <Compile Include="DB_Class\cls_LichTrucDiaDiemChiTiet.cs" />
+    <Compile Include="DB_Class\cls_LienHe.cs" />
+    <Compile Include="DB_Class\cls_LoaiBV.cs" />
+    <Compile Include="DB_Class\cls_LoaiDanhMuc.cs" />
+    <Compile Include="DB_Class\cls_LoaiGia.cs" />
+    <Compile Include="DB_Class\cls_LoaiVP.cs" />
+    <Compile Include="DB_Class\cls_LT_DanhMucBoPhan.cs" />
+    <Compile Include="DB_Class\cls_LT_DanhMucKip.cs" />
+    <Compile Include="DB_Class\cls_LT_DanhMucNhomKip.cs" />
+    <Compile Include="DB_Class\cls_LT_DanhMucNhomNhanVienKhoaPhong.cs" />
+    <Compile Include="DB_Class\cls_LT_DanhMucNhomTruc.cs" />
+    <Compile Include="DB_Class\cls_LT_DMNhomKip.cs" />
+    <Compile Include="DB_Class\cls_LT_KhoaPhongNhom.cs" />
+    <Compile Include="DB_Class\cls_LT_KipKhoaPhong.cs" />
+    <Compile Include="DB_Class\cls_LT_NhanVienKip.cs" />
+    <Compile Include="DB_Class\cls_LT_NhomCaKhoaPhong.cs" />
+    <Compile Include="DB_Class\cls_LT_NhomKip.cs" />
+    <Compile Include="DB_Class\cls_LT_NhomNhanVien.cs" />
+    <Compile Include="DB_Class\cls_LT_NS_DMNhomTruc.cs" />
+    <Compile Include="DB_Class\cls_MapDanhMucBHYT.cs" />
+    <Compile Include="DB_Class\cls_MatKhauBHYT.cs" />
+    <Compile Include="DB_Class\cls_NhanSu_LiLichNhanVien.cs" />
+    <Compile Include="DB_Class\cls_NhanTu.cs" />
+    <Compile Include="DB_Class\cls_NhanVien.cs" />
+    <Compile Include="DB_Class\cls_NhanVienPTTT.cs" />
+    <Compile Include="DB_Class\cls_NhapKhoa.cs" />
+    <Compile Include="DB_Class\cls_NoiGioiThieu.cs" />
+    <Compile Include="DB_Class\cls_Option.cs" />
+    <Compile Include="DB_Class\cls_PhanQuyen.cs" />
+    <Compile Include="DB_Class\cls_PhanQuyenMoi.cs" />
+    <Compile Include="DB_Class\cls_PhuCapPhongMo.cs" />
+    <Compile Include="DB_Class\cls_PhuongXa.cs" />
+    <Compile Include="DB_Class\cls_PTTT.cs" />
+    <Compile Include="DB_Class\cls_Quan.cs" />
+    <Compile Include="DB_Class\cls_QuanHe.cs" />
+    <Compile Include="DB_Class\cls_STT_CapSo.cs" />
+    <Compile Include="DB_Class\cls_STT_CauHinhLCD.cs" />
+    <Compile Include="DB_Class\cls_STT_DangKyCT.cs" />
+    <Compile Include="DB_Class\cls_STT_DinhNghia.cs" />
+    <Compile Include="DB_Class\cls_STT_KhoaPhong.cs" />
+    <Compile Include="DB_Class\cls_STT_KhuVuc.cs" />
+    <Compile Include="DB_Class\cls_STT_KhuVucPhong.cs" />
+    <Compile Include="DB_Class\cls_STT_NhomKhuVuc.cs" />
+    <Compile Include="DB_Class\cls_STT_NhomLCD.cs" />
+    <Compile Include="DB_Class\cls_STT_TimeZone.cs" />
+    <Compile Include="DB_Class\cls_SuKien.cs" />
+    <Compile Include="DB_Class\cls_SYS_DanhMuc.cs" />
+    <Compile Include="DB_Class\cls_Sys_Map.cs" />
+    <Compile Include="DB_Class\cls_TaiSan_DanhMuc.cs" />
+    <Compile Include="DB_Class\cls_TaiSan_KiemKeCT.cs" />
+    <Compile Include="DB_Class\cls_TaiSan_KiemKeLL.cs" />
+    <Compile Include="DB_Class\cls_TaiSan_NhapCT.cs" />
+    <Compile Include="DB_Class\cls_TaiSan_NhapLL.cs" />
+    <Compile Include="DB_Class\cls_TaiSan_SuDungCT.cs" />
+    <Compile Include="DB_Class\cls_TaiSan_SuDungLL.cs" />
+    <Compile Include="DB_Class\cls_TenVien.cs" />
+    <Compile Include="DB_Class\cls_TheoDoiGiuong.cs" />
+    <Compile Include="DB_Class\cls_TheoDoiGiuongHistory.cs" />
+    <Compile Include="DB_Class\cls_TiepDon.cs" />
+    <Compile Include="DB_Class\cls_TinhThanh.cs" />
+    <Compile Include="DB_Class\cls_TrungTamYTe.cs" />
+    <Compile Include="DB_Class\cls_TS_DanhMuc.cs" />
+    <Compile Include="DB_Class\cls_TTKhamThai.cs" />
+    <Compile Include="DB_Class\cls_TTXK.cs" />
+    <Compile Include="DB_Class\cls_TuongTacThuoc.cs" />
+    <Compile Include="DB_Class\cls_TuVong.cs" />
+    <Compile Include="DB_Class\cls_VaiTro.cs" />
+    <Compile Include="DB_Class\cls_V_ChiDinh.cs" />
+    <Compile Include="DB_Class\cls_V_ChiTietThanhToan.cs" />
+    <Compile Include="DB_Class\cls_V_GiaVienPhi.cs" />
+    <Compile Include="DB_Class\cls_V_LoaiVienPhi.cs" />
+    <Compile Include="DB_Class\cls_V_NhomVienPhi.cs" />
+    <Compile Include="DB_Class\cls_V_PhuongThucThanhToan.cs" />
+    <Compile Include="DB_Class\cls_V_TheoDoiCongNo.cs" />
+    <Compile Include="DB_Class\cls_XuatKhoa.cs" />
+    <Compile Include="DB_Class\cls_XuatVien.cs" />
+    <Compile Include="OB_Class\CCBoxItem.cs" />
+    <Compile Include="OB_Class\cls_BADT_DanhMucDungChung.cs" />
+    <Compile Include="OB_Class\cls_DuLieu.cs" />
+    <Compile Include="OB_Class\cls_Enum_His4.cs" />
+    <Compile Include="OB_Class\cls_Menu.cs" />
+    <Compile Include="OB_Class\cls_QuanLyTaiSan.cs" />
+    <Compile Include="OB_Class\obj_MaTen.cs" />
+    <Compile Include="OB_Class\obj_MaTen2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

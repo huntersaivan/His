@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace E00_Model
+{
+    public static class cls_V_GiaVienPhi
+    {
+        public static string tb_TenBang = "V_GIAVP";
+        public static string col_ID = "ID";
+        public static string col_ID_LOAI = "ID_LOAI";
+        public static string col_STT = "STT";
+        public static string col_MA = "MA";
+        public static string col_TEN = "TEN";
+        public static string col_DVT = "DVT";
+        public static string col_BHYT = "BHYT";
+        public static string col_GIA_TH = "GIA_TH";
+        public static string col_GIA_BH = "GIA_BH";
+        public static string col_GIA_CS = "GIA_CS";
+        public static string col_GIA_DV = "GIA_DV";
+        public static string col_GIA_NN = "GIA_NN";
+        public static string col_VATTU_TH = "VATTU_TH";
+        public static string col_VATTU_BH = "VATTU_BH";
+        public static string col_VATTU_CS = "VATTU_CS";
+        public static string col_VATTU_DV = "VATTU_DV";
+        public static string col_VATTU_NN = "VATTU_NN";
+        public static string col_LOAIBN = "LOAIBN";
+        public static string col_THEOBS = "THEOBS";
+        public static string col_TRONGOI = "TRONGOI";
+        public static string col_CHENHLECH = "CHENHLECH";
+        public static string col_LOAITRONGOI = "LOAITRONGOI";
+        public static string col_LOCTHE = "LOCTHE";
+        public static string col_THUONG = "THUONG";
+        public static string col_READONLY = "READONLY";
+        public static string col_NDM = "NDM";
+        public static string col_TYLEKHUYENMAI = "TYLEKHUYENMAI";
+        public static string col_HIDE = "HIDE";
+        public static string col_GIA_KSK = "GIA_KSK";
+        public static string col_VATTU_KSK = "VATTU_KSK";
+        public static string col_KYTHUAT = "KYTHUAT";
+        public static string col_GIAVTTH = "GIAVTTH";
+        public static string col_VAT = "VAT";
+        public static string col_NOITHUCHIEN = "NOITHUCHIEN";
+        public static string col_MATHUCHIEN = "MATHUCHIEN";
+        public static string col_TENTHUCHIEN = "TENTHUCHIEN";
+        public static string col_MACU = "MACU";
+        public static string col_GHICHU = "GHICHU";
+        public static string col_KHUYENMAI = "KHUYENMAI";
+        public static string col_GUI = "GUI";
+        public static string col_MADOITUONG = "MADOITUONG";
+        public static string col_MIENPCL = "MIENPCL";
+        public static string col_KHU = "KHU";
+        public static string col_USERID = "USERID";
+        public static string col_NGAYUD = "NGAYUD";
+        public static string col_DMUC = "DMUC";
+        public static string col_MACHINEID = "MACHINEID";
+        public static string col_QD05 = "QD05";
+        public static string col_TYLE = "TYLE";
+        public static string col_STTQD = "STTQD";
+        public static string col_MABYT = "MABYT";
+        public static string col_TENBYT = "TENBYT";
+        public static string col_MAVPBHYT = "MAVPBHYT";
+        public static string col_MATT5084 = "MATT5084";
+        public static string col_GIA_BH_BAK = "GIA_BH_BAK";
+        public static string col_TENEN = "TENEN";
+        public static string col_DVTGEN = "DVTGEN";
+        public static string col_DVTEN = "DVTEN";
+        public static string col_GIA_BH_NN = "GIA_BH_NN";
+        public static string col_VATTU_BH_NN="VATTU_BH_NN";
+        public static string col_GIA_DOLA_NN="GIA_DOLA_NN";
+        public static string col_GIA_DOLA_BH_NN="GIA_DOLA_BH_NN";
+        public static string col_MATT37="MATT37";
+        public static string col_TENTT37="TENTT37";
+        public static string col_MATT43="MATT43";
+        public static string col_TENTT43="TENTT43";
+        public static string col_MATT50="MATT50";
+        public static string col_MATT1122="MATT1122";
+        public static string col_IDTHUCHIEN="IDTHUCHIEN";
+        public static string col_IDTHUCHIENDT="IDTHUCHIENDT";
+        public static string col_NOITRUKTHUTTIEP="NOITRUKTHUTTIEP";
+        public static string col_GIA_T="GIA_T";
+        public static string col_GIA_T0103="GIA_T0103";
+        public static string col_GIA_T0107="GIA_T0107";
+        public static string col_MADUNGCHUNG="MADUNGCHUNG";
+        public static string col_MA_GIA="MA_GIA";
+        public static string col_QUYETDINH="QUYETDINH";
+        public static string col_NGAYQUYETDINH="NGAYQUYETDINH";
+        public static string col_HOICHAN="HOICHAN";
+        public static string col_VATTU_DOLA_NN = "VATTU_DOLA_NN";
+        public static string col_VATTU_DOLA_BH_NN="VATTU_DOLA_BH_NN";
+        public static string col_MIENCUNGCHITRA="MIENCUNGCHITRA";
+        public static string col_TENTT37_BV="TENTT37_BV";
+        public static string col_CHUYENTRUNGGIAN = "CHUYENTRUNGGIAN";
+
+    }
+}
