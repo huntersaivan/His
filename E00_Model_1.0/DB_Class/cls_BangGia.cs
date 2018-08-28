@@ -18,6 +18,6 @@ namespace E00_Model
         public static string col_APDUNG = "APDUNG";
         public static string col_NGAYBD = "NGAYBD";
         public static string col_NGAYCAPNHAT = "NGAYCAPNHAT";
-        public static string col_NGUOICAPNHAT = "NGUOICAPNHAT";
+        public static string col_NGUOICAPNHAT = "NGUOICAPNHAT"; 
     }
 }
